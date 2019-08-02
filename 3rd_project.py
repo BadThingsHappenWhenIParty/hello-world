@@ -1,3 +1,5 @@
+# Assignment for the task: https://drive.google.com/open?id=13wTgAOG2Ss2WtMqU6JxM9dRAYp-yUMa_
+
 import requests
 from bs4 import BeautifulSoup as BS
 import os
@@ -7,6 +9,7 @@ url = "https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ"
 response = requests.get(url)
 
 soup = BS(response.text, "html.parser")
+# Ignoruj ty commented-out věci, jsem to nechtěl všechno smazat, ale asi to k ničemu stenak nebude
 # print(soup.prettify())
 # tabulka1 = soup.find_all('td', {'headers': 't1sb2'})
 # tabulka2 = soup.find_all('td', {'headers': 't2sb2'})
