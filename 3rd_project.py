@@ -9,7 +9,7 @@ url = "https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ"
 response = requests.get(url)
 
 soup = BS(response.text, "html.parser")
-# Ignoruj ty commented-out věci, jsem to nechtěl všechno smazat, ale asi to k ničemu stenak nebude
+# Ignoruj ty commented-out věci, jsem to nechtěl všechno smazat, ale asi to k ničemu stejnak nebude
 # print(soup.prettify())
 # tabulka1 = soup.find_all('td', {'headers': 't1sb2'})
 # tabulka2 = soup.find_all('td', {'headers': 't2sb2'})
